@@ -1,0 +1,4 @@
+site_name: CheesyScripts Docs
+site_url: https://docs.cheesyscripts.com
+theme:
+  name: material
