@@ -18,13 +18,13 @@ Before installing any of our scripts, ensure your server meets these baseline re
 ## :rocket: Installation Flow
 All CheesyScripts follow a standardized installation process:
 
-1.  **Download:** Claim your asset from [FiveM Keymaster](https://keymaster.fivem.net/assets).
+1.  **Download:** Claim your asset from [FiveM Keymaster](https://portal.cfx.re/login).
 2.  **Placement:** Extract the folder into your `resources/` directory (e.g., `resources/[cheesy]`).
 3.  **Config:** Edit the `config.lua` to match your framework (**ESX/QB/Standalone**).
 4.  **Start:** Add `ensure [script_name]` to your `server.cfg`.
 
-!!! success "Performance Monitoring"
-    Our scripts are built with performance in mind. If you notice an idle MS higher than **0.01ms**, please check your configuration or open a support ticket.
+!!! success "Optimization"
+    All CheesyScripts are built with performance as a core focus. We aim for high-efficiency loops and clean event handling to ensure your server stays responsive under load.
 
 ---
 
