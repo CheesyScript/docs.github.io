@@ -2,3 +2,33 @@ site_name: CheesyScripts Docs
 site_url: https://docs.cheesyscripts.com
 theme:
   name: material
+
+  features:
+    - toc.follow
+    - navigation.sections
+
+  icon:
+    annotation: material/arrow-right-circle 
+
+  palette:
+    primary: yellow
+    scheme: slate
+
+nav:
+  - Home: index.md
+  - Scripts:
+    - Carlock: scripts/cs_carlock.md
+  
+copyright: Copyright &copy; 2026 CheeyScripts
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
