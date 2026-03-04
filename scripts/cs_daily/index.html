@@ -1,0 +1,1017 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.cheesyscripts.com/scripts/cs_daily/">
+      
+      
+        <link rel="prev" href="../cs_carlock/">
+      
+      
+        <link rel="next" href="../cs_weighstation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Daily System - CheesyScripts Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010M6%2013h8l-3.5%203.5%201.42%201.42L17.84%2012l-5.92-5.92L10.5%207.5%2014%2011H6z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="yellow" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cs_daily-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CheesyScripts Docs" class="md-header__button md-logo" aria-label="CheesyScripts Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CheesyScripts Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Daily System
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CheesyScripts Docs" class="md-nav__button md-logo" aria-label="CheesyScripts Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CheesyScripts Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scripts
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scripts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs_carlock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carlock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs_weighstation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weighstation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cs_daily-documentation">📅 cs_daily Documentation</h1>
+<p><code>cs_daily</code> is a fully configurable daily &amp; weekly quest system for FiveM.
+Players complete quests, earn rewards, and maintain login streaks — with VIP support, leaderboards, and an in-game admin menu.</p>
+<hr />
+<h1 id="installation">📦 Installation</h1>
+<ol>
+<li>Place <code>cs_daily</code> inside your <code>resources</code> folder</li>
+<li>Import <code>installation/query.sql</code> into your database</li>
+<li>Add to your <code>server.cfg</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="na">ensure ox_lib</span>
+<span class="na">ensure oxmysql</span>
+<span class="na">ensure cs_daily</span>
+</code></pre></div>
+<blockquote>
+<p>Make sure <code>ox_lib</code> and <code>oxmysql</code> start <strong>before</strong> <code>cs_daily</code>.</p>
+</blockquote>
+<ol>
+<li>Configure <code>shared/config.lua</code> to match your server setup</li>
+</ol>
+<hr />
+<h1 id="configuration-guide">⚙️ Configuration Guide</h1>
+<hr />
+<h2 id="version-check">🔍 Version Check</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">VersionCheck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>true</code></td>
+<td>Console will notify if the script is outdated</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td>Disable version checking</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="general">🌐 General</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">General</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">ServerName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;My Server&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">Locale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">ResetTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">MinimumHoursBetweenClaims</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">StreakGracePeriodHours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">DailyQuestCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">EnableWeeklyQuests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">WeeklyQuestCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">InteractionType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;auto&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">EnableWeekendBonus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">WeekendMultiplier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">UpdateInterval</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ServerName</code></td>
+<td>Displayed in the UI header</td>
+</tr>
+<tr>
+<td><code>Locale</code></td>
+<td>Language: <code>en</code>, <code>nl</code>, <code>de</code></td>
+</tr>
+<tr>
+<td><code>ResetTime</code></td>
+<td>Hour of day quests reset (0–23, <code>0</code> = midnight)</td>
+</tr>
+<tr>
+<td><code>MinimumHoursBetweenClaims</code></td>
+<td>Prevents players from gaming the reset</td>
+</tr>
+<tr>
+<td><code>StreakGracePeriodHours</code></td>
+<td>Hours after reset where streak is still maintained</td>
+</tr>
+<tr>
+<td><code>DailyQuestCount</code></td>
+<td>How many daily quests each player gets (1–5 recommended)</td>
+</tr>
+<tr>
+<td><code>EnableWeeklyQuests</code></td>
+<td>Toggle the weekly quest system</td>
+</tr>
+<tr>
+<td><code>WeeklyQuestCount</code></td>
+<td>Number of weekly quests per player (1–3 recommended)</td>
+</tr>
+<tr>
+<td><code>InteractionType</code></td>
+<td><code>auto</code>, <code>ox_target</code>, <code>qb-target</code>, or <code>zones</code></td>
+</tr>
+<tr>
+<td><code>EnableWeekendBonus</code></td>
+<td>Apply a reward multiplier on Saturday &amp; Sunday</td>
+</tr>
+<tr>
+<td><code>WeekendMultiplier</code></td>
+<td>Multiplier applied on weekends (<code>1.5</code> = 50% bonus)</td>
+</tr>
+<tr>
+<td><code>UpdateInterval</code></td>
+<td>How often quest progress updates in ms (default: <code>5000</code>)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="branding">🎨 Branding</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">Branding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">Colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">primary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#FFC107&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nv">Logo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;open/logo.svg&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">FontFamily</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Chakra Petch&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Colors</code></td>
+<td>UI color palette (primary, text, accent, danger, success, etc.)</td>
+</tr>
+<tr>
+<td><code>Logo</code></td>
+<td>Path to your logo — supports <code>.svg</code>, <code>.png</code>, <code>.jpg</code></td>
+</tr>
+<tr>
+<td><code>FontFamily</code></td>
+<td><code>Chakra Petch</code>, <code>JetBrains Mono</code>, or <code>Syne</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="streak-system">🔥 Streak System</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">Streak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">Protection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">Enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">AutoUseFreeze</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">FreeFreezesPerMonth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">MaxFreezes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">PurchasableFreeze</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">FreezeCost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nv">money</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25000</span><span class="p">,</span><span class="w"> </span><span class="nv">moneyType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;bank&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>Enable streak freeze protection</td>
+</tr>
+<tr>
+<td><code>AutoUseFreeze</code></td>
+<td>Auto-use a freeze when a player misses a day</td>
+</tr>
+<tr>
+<td><code>FreeFreezesPerMonth</code></td>
+<td>Number of free freezes given per month</td>
+</tr>
+<tr>
+<td><code>MaxFreezes</code></td>
+<td>Maximum freezes a player can hold</td>
+</tr>
+<tr>
+<td><code>PurchasableFreeze</code></td>
+<td>Allow players to buy freezes</td>
+</tr>
+<tr>
+<td><code>FreezeCost</code></td>
+<td>Cost to buy a freeze (<code>bank</code>, <code>cash</code>, or <code>money</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="streak-multipliers">Streak Multipliers</h3>
+<p>Defined in <code>open/quests.lua</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Streak</th>
+<th>Multiplier</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 days</td>
+<td>×1.1</td>
+<td>🔥</td>
+</tr>
+<tr>
+<td>7 days</td>
+<td>×1.25</td>
+<td>🔥🔥</td>
+</tr>
+<tr>
+<td>14 days</td>
+<td>×1.5</td>
+<td>🔥🔥🔥</td>
+</tr>
+<tr>
+<td>30 days</td>
+<td>×2.0</td>
+<td>⭐</td>
+</tr>
+<tr>
+<td>60 days</td>
+<td>×2.5</td>
+<td>⭐⭐</td>
+</tr>
+<tr>
+<td>100 days</td>
+<td>×3.0</td>
+<td>💎</td>
+</tr>
+<tr>
+<td>365 days</td>
+<td>×5.0</td>
+<td>👑</td>
+</tr>
+</tbody>
+</table>
+<h3 id="streak-milestones">Streak Milestones</h3>
+<p>One-time rewards at milestone streaks (7, 30, 60, 100, 365 days). Defined in <code>open/quests.lua</code>.</p>
+<hr />
+<h2 id="vip-system">💎 VIP System</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">VIP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">Enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">DetectionMethod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;custom&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">Tiers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">standard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nv">multiplier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="p">},</span>
+<span class="w">        </span><span class="nv">vip</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nv">multiplier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.5</span><span class="p">},</span>
+<span class="w">        </span><span class="nv">vipplus</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nv">multiplier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.0</span><span class="p">},</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>Toggle the VIP reward multiplier system</td>
+</tr>
+<tr>
+<td><code>DetectionMethod</code></td>
+<td><code>ace</code> (ACE permissions) or <code>custom</code> (via <code>open/custom.lua</code>)</td>
+</tr>
+<tr>
+<td><code>Tiers</code></td>
+<td>Define multipliers per VIP tier</td>
+</tr>
+</tbody>
+</table>
+<p>Custom VIP detection is handled in <code>open/custom.lua</code> → <code>Custom.GetVIPTier</code>.</p>
+<hr />
+<h2 id="leaderboard">🏆 Leaderboard</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">Leaderboard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">Enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">ShowTop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">RefreshInterval</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">300000</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">Categories</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">{</span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;current&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Current Streak&quot;</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;longest&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Longest Streak&quot;</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;claims&quot;</span><span class="p">,</span><span class="w">  </span><span class="nv">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Total Claims&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>Show the leaderboard tab in the UI</td>
+</tr>
+<tr>
+<td><code>ShowTop</code></td>
+<td>Number of players shown</td>
+</tr>
+<tr>
+<td><code>RefreshInterval</code></td>
+<td>How often the leaderboard refreshes (ms)</td>
+</tr>
+<tr>
+<td><code>Categories</code></td>
+<td>Leaderboard tabs/categories</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="admin">🛠️ Admin</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">Admin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">EnableAdminCommands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">DevMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Grant admin access in <code>server.cfg</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="na">add_ace group.admin cs_daily.admin allow</span>
+<span class="na">add_principal identifier.fivem</span><span class="o">:</span><span class="s">YOUR_ID group.admin</span>
+</code></pre></div>
+<p>In-game command: <code>/dailyadmin</code></p>
+<p><strong>Admin menu options:</strong>
+- View Player Stats
+- Set Player Streak
+- Give Streak Freezes
+- Reset Today's Quests
+- Wipe All Player Data</p>
+<hr />
+<h1 id="quest-configuration">📋 Quest Configuration</h1>
+<p>All quests are defined in <code>open/quests.lua</code>.</p>
+<h2 id="quest-types">Quest Types</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>instant</code></td>
+<td>Claim immediately — no action required</td>
+</tr>
+<tr>
+<td><code>time</code></td>
+<td>Stay online for X seconds</td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td>Travel to a specific location</td>
+</tr>
+<tr>
+<td><code>activity</code></td>
+<td>Drive or walk a set distance</td>
+</tr>
+<tr>
+<td><code>task</code></td>
+<td>Perform an animation at a location</td>
+</tr>
+<tr>
+<td><code>collect</code></td>
+<td>Collect props from spawn locations on the map</td>
+</tr>
+</tbody>
+</table>
+<h2 id="difficulty-pools">Difficulty Pools</h2>
+<p>Quests are split into <code>easy</code>, <code>medium</code>, and <code>hard</code> pools, each with a <code>weight</code> that controls how often they appear.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">Config</span><span class="p">.</span><span class="py">DailyQuestPools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">easy</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nv">weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="nv">quests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}},</span>
+<span class="w">    </span><span class="nv">medium</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nv">weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="nv">quests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}},</span>
+<span class="w">    </span><span class="nv">hard</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nv">weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="nv">quests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}},</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Weekly quests use the same format under <code>Config.WeeklyQuestPools</code>.</p>
+<h2 id="adding-a-quest">Adding a Quest</h2>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_quest&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nb">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;task&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;My Custom Quest&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Do something cool&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;⭐&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">difficulty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;medium&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">preset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;dance&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">vector3</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">),</span>
+<span class="w">    </span><span class="nv">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5.0</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">rewards</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">money</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3000</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">{</span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;lockpick&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">amount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">},</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="task-presets">Task Presets</h2>
+<p>Predefined animations for <code>task</code> quests. Defined in <code>open/quests.lua</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dance</code></td>
+<td>Dance animation</td>
+</tr>
+<tr>
+<td><code>clean</code></td>
+<td>Broom cleaning</td>
+</tr>
+<tr>
+<td><code>mow</code></td>
+<td>Lawn mower animation</td>
+</tr>
+<tr>
+<td><code>exercise</code></td>
+<td>Push-ups</td>
+</tr>
+<tr>
+<td><code>repair</code></td>
+<td>Wrench repair</td>
+</tr>
+<tr>
+<td><code>garden</code></td>
+<td>Garden spade</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="customization-hooks">🔧 Customization Hooks</h1>
+<p>Defined in <code>open/custom.lua</code>. These are called automatically by the script.</p>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>When it fires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Custom.GetVIPTier</code></td>
+<td>On player connect — return VIP tier</td>
+</tr>
+<tr>
+<td><code>Custom.OnQuestComplete</code></td>
+<td>When a player completes a quest</td>
+</tr>
+<tr>
+<td><code>Custom.OnDailyClaim</code></td>
+<td>When a player claims their daily reward</td>
+</tr>
+<tr>
+<td><code>Custom.OnMilestoneReached</code></td>
+<td>When a streak milestone is hit</td>
+</tr>
+<tr>
+<td><code>Custom.OnStreakLost</code></td>
+<td>When a player loses their streak</td>
+</tr>
+<tr>
+<td><code>Custom.ModifyRewards</code></td>
+<td>Modify rewards before they are given</td>
+</tr>
+<tr>
+<td><code>Custom.GiveExtraRewards</code></td>
+<td>Give extra rewards after default ones</td>
+</tr>
+</tbody>
+</table>
+<h3 id="discord-logging">Discord Logging</h3>
+<div class="highlight"><pre><span></span><code><span class="nv">Custom</span><span class="p">.</span><span class="py">Discord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">Enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">WebhookURL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://discord.com/api/webhooks/...&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">BotName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CheesyScripts&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h1 id="commands">💬 Commands</h1>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/daily</code></td>
+<td>Open the daily quests &amp; rewards menu</td>
+</tr>
+<tr>
+<td><code>/dailyadmin</code></td>
+<td>Open the admin menu (requires permission)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="feature-overview">📖 Feature Overview</h1>
+<p>✔ Daily &amp; Weekly Quest System
+✔ Login Streak with Multipliers &amp; Milestones
+✔ Streak Freeze Protection
+✔ VIP Reward Multipliers
+✔ Weekend Bonus Rewards
+✔ Leaderboard
+✔ Discord Logging
+✔ In-Game Admin Menu
+✔ Multi-Framework Support (ESX, QBCore, QBox)
+✔ Fully Customizable Quests &amp; Hooks</p>
+<hr />
+<h1 id="support">🛠️ Support</h1>
+<p>If you encounter issues:
+1. Check F8 console for errors
+2. Verify <code>ox_lib</code> and <code>oxmysql</code> start before <code>cs_daily</code>
+3. Confirm <code>installation/query.sql</code> was imported
+4. Check item names in <code>open/quests.lua</code> match your inventory system
+5. Join our Discord: https://discord.gg/qrAdgGDnvB</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 CheeyScripts
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.follow", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
