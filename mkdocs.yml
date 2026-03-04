@@ -18,7 +18,7 @@ nav:
   - Home: index.md
   - Scripts:
     - Carlock: scripts/cs_carlock.md
-    - Daily: scripts/cs_daily.md
+    - Daily System: scripts/cs_daily.md
     - Weighstation: scripts/cs_weighstation.md
   
 copyright: Copyright &copy; 2026 CheeyScripts
